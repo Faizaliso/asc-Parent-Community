@@ -21,4 +21,13 @@ model User {
   email String @unique
   password String?
   avatarUrl String?
+  topics Topic[]
+}
+
+model Topic {
+  id String @id @default(cuid())
+  content String
+  dateCreated DateTime
+  userId String
+  user User @relation(fields: [userId], references: [id])
 }
