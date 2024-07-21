@@ -1,7 +1,9 @@
 export default function Home() {
+	
   return (
-    <nmain>
+    <main>
       <div>Parent Community</div>
-    </nmain>
+      
+    </main>
   );
 }
