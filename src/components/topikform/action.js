@@ -8,7 +8,8 @@ export async function createTopicAction(_, formData) {
   const topic = await prisma.topic.create({
     data: {
       content,
-      userid: "clys33y3t0000cmfqnqinp3na",
+      dateCreated: new Date(),
+      userid,
     },
   });
 
